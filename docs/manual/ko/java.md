@@ -33,7 +33,7 @@ sequenceDiagram
 ```groovy
 repositories {
     maven {
-        url = uri('https://maven.pkg.github.com/accesscore-dev/accesscore-license-sdk-dist')
+        url = uri('https://maven.pkg.github.com/simplecore-labs/accesscore-license-sdk-dist')
         credentials {
             username = providers.gradleProperty('gpr.user').orElse(providers.environmentVariable('GITHUB_USERNAME')).get()
             password = providers.gradleProperty('gpr.token').orElse(providers.environmentVariable('GITHUB_TOKEN')).get()
@@ -73,7 +73,7 @@ CI에서는 워크플로우가 제공하는 `GITHUB_TOKEN`에 이미 `read:packa
 <repositories>
   <repository>
     <id>accesscore</id>
-    <url>https://maven.pkg.github.com/accesscore-dev/accesscore-license-sdk-dist</url>
+    <url>https://maven.pkg.github.com/simplecore-labs/accesscore-license-sdk-dist</url>
   </repository>
 </repositories>
 

@@ -32,7 +32,7 @@ sequenceDiagram
 SDK는 Python 3.9 이상이 필요합니다.
 
 ```
-pip install https://github.com/accesscore-dev/accesscore-license-sdk-dist/releases/download/v1.2.0/accesscore_license-1.2.0-py3-none-any.whl
+pip install https://github.com/simplecore-labs/accesscore-license-sdk-dist/releases/download/v1.2.0/accesscore_license-1.2.0-py3-none-any.whl
 ```
 
 네이티브 코어는 wheel 안에 플랫폼당 한 디렉터리로 담깁니다. 디렉터리는 `linux-x86_64`, `linux-x86_64-musl`, `linux-aarch64`, `darwin-x86_64`, `darwin-aarch64`, `windows-x86_64`입니다. Linux에서는 musl 로더가 있으면 musl 코어를 읽습니다. `ACLIC_NATIVE_LIBC=musl` 또는 `glibc`로 직접 지정할 수도 있습니다. 공유 라이브러리를 어디서 가져올지 자체 정책으로 고정한 배포물은 `ACLIC_NATIVE_LIBRARY`로 파일을 지정하면 됩니다. 이 값은 읽어 들일 파일만 가리킬 뿐 신뢰할 키를 가리키지 않습니다.
@@ -40,7 +40,7 @@ pip install https://github.com/accesscore-dev/accesscore-license-sdk-dist/releas
 프레임워크 추가 설치(`fastapi`, `django`, `flask`)는 제품이 쓰는 프레임워크만 설치합니다. wheel은 PyPI에 없으므로 추가 설치 이름과 wheel 주소를 함께 적으세요.
 
 ```
-pip install "accesscore-license[fastapi] @ https://github.com/accesscore-dev/accesscore-license-sdk-dist/releases/download/v1.2.0/accesscore_license-1.2.0-py3-none-any.whl"
+pip install "accesscore-license[fastapi] @ https://github.com/simplecore-labs/accesscore-license-sdk-dist/releases/download/v1.2.0/accesscore_license-1.2.0-py3-none-any.whl"
 ```
 
 ## 제품이 구현할 클래스

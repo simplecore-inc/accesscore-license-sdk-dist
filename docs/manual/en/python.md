@@ -33,7 +33,7 @@ sequenceDiagram
 The SDK needs Python 3.9 or later.
 
 ```
-pip install https://github.com/accesscore-dev/accesscore-license-sdk-dist/releases/download/v1.2.0/accesscore_license-1.2.0-py3-none-any.whl
+pip install https://github.com/simplecore-labs/accesscore-license-sdk-dist/releases/download/v1.2.0/accesscore_license-1.2.0-py3-none-any.whl
 ```
 
 The native core travels inside the wheel, one directory per platform: `linux-x86_64`,
@@ -46,7 +46,7 @@ Framework extras install only what a product uses: `fastapi`, `django`, `flask`.
 not on PyPI, so name the extra together with the wheel's address:
 
 ```
-pip install "accesscore-license[fastapi] @ https://github.com/accesscore-dev/accesscore-license-sdk-dist/releases/download/v1.2.0/accesscore_license-1.2.0-py3-none-any.whl"
+pip install "accesscore-license[fastapi] @ https://github.com/simplecore-labs/accesscore-license-sdk-dist/releases/download/v1.2.0/accesscore_license-1.2.0-py3-none-any.whl"
 ```
 
 ## What a product has to supply
