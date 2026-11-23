@@ -32,11 +32,11 @@ sequenceDiagram
 모듈은 Go 1.22 이상이 필요합니다.
 
 ```
-go get github.com/simplecore-labs/accesscore-license-sdk-dist/packages/go@v1.2.0
+go get github.com/simplecore-inc/accesscore-license-sdk-dist/packages/go@v1.2.0
 ```
 
 ```go
-import aclic "github.com/simplecore-labs/accesscore-license-sdk-dist/packages/go"
+import aclic "github.com/simplecore-inc/accesscore-license-sdk-dist/packages/go"
 ```
 
 코어를 정적으로 링크하므로 Go 바이너리에 코어가 함께 들어갑니다. 옆에 공유 라이브러리를 따로 설치할 필요가 없습니다. 대신 cgo가 필요하며 `CGO_ENABLED=0`으로는 빌드되지 않습니다. 모듈에는 linux amd64·arm64, darwin amd64·arm64, windows amd64용 코어가 들어 있습니다. musl 코어는 없으므로 Alpine을 비롯한 musl 시스템은 지원하지 않습니다.

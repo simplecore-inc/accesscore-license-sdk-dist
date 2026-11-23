@@ -33,11 +33,11 @@ sequenceDiagram
 The module needs Go 1.22 or later.
 
 ```
-go get github.com/simplecore-labs/accesscore-license-sdk-dist/packages/go@v1.2.0
+go get github.com/simplecore-inc/accesscore-license-sdk-dist/packages/go@v1.2.0
 ```
 
 ```go
-import aclic "github.com/simplecore-labs/accesscore-license-sdk-dist/packages/go"
+import aclic "github.com/simplecore-inc/accesscore-license-sdk-dist/packages/go"
 ```
 
 The core is linked statically, so a Go binary carries it rather than needing a shared library

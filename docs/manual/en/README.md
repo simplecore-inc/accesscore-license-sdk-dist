@@ -60,8 +60,8 @@ The core travels inside each package, so nothing has to be installed beside your
 | Language | Where it comes from | Token |
 | --- | --- | --- |
 | Java | `dev.accesscore:license-sdk`, from the GitHub Packages registry | `read:packages` — see [the Java guide](java.md) |
-| Python | the wheel on [the release](https://github.com/simplecore-labs/accesscore-license-sdk-dist/releases/tag/v1.2.0) | none |
-| Go | `github.com/simplecore-labs/accesscore-license-sdk-dist/packages/go` | none |
+| Python | the wheel on [the release](https://github.com/simplecore-inc/accesscore-license-sdk-dist/releases/tag/v1.2.0) | none |
+| Go | `github.com/simplecore-inc/accesscore-license-sdk-dist/packages/go` | none |
 
 Every language is also attached to the release as a file — the jar, the wheel, the Go module,
 and the prebuilt cores for binding the C ABI from a language the SDK does not cover. A build

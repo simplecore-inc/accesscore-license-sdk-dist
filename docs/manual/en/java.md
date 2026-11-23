@@ -34,7 +34,7 @@ sequenceDiagram
 ```groovy
 repositories {
     maven {
-        url = uri('https://maven.pkg.github.com/simplecore-labs/accesscore-license-sdk-dist')
+        url = uri('https://maven.pkg.github.com/simplecore-inc/accesscore-license-sdk-dist')
         credentials {
             username = providers.gradleProperty('gpr.user').orElse(providers.environmentVariable('GITHUB_USERNAME')).get()
             password = providers.gradleProperty('gpr.token').orElse(providers.environmentVariable('GITHUB_TOKEN')).get()
@@ -76,7 +76,7 @@ In CI, the workflow's own `GITHUB_TOKEN` already carries `read:packages`.
 <repositories>
   <repository>
     <id>accesscore</id>
-    <url>https://maven.pkg.github.com/simplecore-labs/accesscore-license-sdk-dist</url>
+    <url>https://maven.pkg.github.com/simplecore-inc/accesscore-license-sdk-dist</url>
   </repository>
 </repositories>
 
